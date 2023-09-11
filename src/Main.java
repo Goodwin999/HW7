@@ -12,6 +12,18 @@ public class Main {
             i = i + 1;
         }
 
+        int g = 1;
+        while (g <= 10) {
+            System.out.print(" " + g);
+            g = g + 1;
+        }
+        System.out.println();
+            for (g = 10; g > 0; g--) {
+                System.out.print(" " + g);
+            }
+
+
+
 
 
     }
