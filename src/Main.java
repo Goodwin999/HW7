@@ -44,6 +44,18 @@ public class Main {
 
         }
 
+        int contribution2 = 15000;
+        int target1 = 12_000_000;
+        int percent1 = 7;
+        for (int j = 0; contribution2 < target; j++) {
+            contribution2 = contribution2 + contribution2 * percent / 100;
+            if (j % 6 == 0) {
+                System.out.println("Месяц " + j + " сумма накоплений составляет " + contribution2);
+
+            }
+        }
+
+
 
     }
 }
