@@ -59,9 +59,23 @@ public class Main {
         }
 
 
-
-
+        int contribution3 = 15000;
+        int percent2 = 7;
+        int month = 108;
+        int total3 = 0;
+        int v = 0;
+        for (; v < month; v++) {
+            total3 = total3 + total3 * percent2 / 100;
+            total3 = total3 + contribution3;
+            if (month % 6 == 0) {
+                System.out.println("Месяц " + month +  " сумма накоплений составляет " + total3);
+            }
         }
 
+
+
     }
+
+}
+
 
