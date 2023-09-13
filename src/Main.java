@@ -5,7 +5,7 @@ public class Main {
 
         int contribution = 15000;
         int total = 0;
-        int i =  0;
+        int i = 0;
         while (total < 2_459_000) {
             total = total + contribution;
             System.out.println("Месяц " + i + " сумма накоплений равна " + total);
@@ -18,13 +18,21 @@ public class Main {
             g = g + 1;
         }
         System.out.println();
-            for (g = 10; g > 0; g--) {
-                System.out.print(" " + g);
-            }
+        for (g = 10; g > 0; g--) {
+            System.out.print(" " + g);
+        }
 
 
-
-
+        System.out.println();
+        int population = 12_000_000;
+        int birthRate = 1;
+        int birthRate1 = 1000;
+        while (birthRate <= 10) {
+            System.out.println("Год " + birthRate + " численность населения составляет " + population);
+            birthRate1 = (17 - 8) * 12_000;
+            population = population + birthRate1;
+            birthRate = birthRate + 1;
+        }
 
     }
 }
