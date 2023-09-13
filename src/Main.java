@@ -38,24 +38,30 @@ public class Main {
         int contribution1 = 15000;
         int target = 12_000_000;
         int percent = 7;
-        for (int j = 0; contribution1 < target; j++) {
-            contribution1 = contribution1 + contribution1 * percent / 100;
-            System.out.println("Месяц " + j + " сумма накоплений составляет " + contribution1);
+        int total1 = 0;
+        for (int j = 0; total1 < target; j++) {
+            total1 = total1 + total1 * percent / 100;
+            total1 = total1 + contribution1;
+            System.out.println("Месяц " + j + " сумма накоплений составляет " + total1);
 
         }
-
         int contribution2 = 15000;
         int target1 = 12_000_000;
         int percent1 = 7;
-        for (int j = 0; contribution2 < target; j++) {
-            contribution2 = contribution2 + contribution2 * percent / 100;
+        int total2 = 0;
+        for (int j = 0; total2 < target1; j++) {
+            total2 = total2 + total2 * percent1 / 100;
+            total2 = total2 + contribution2;
             if (j % 6 == 0) {
-                System.out.println("Месяц " + j + " сумма накоплений составляет " + contribution2);
+                System.out.println("Месяц " + j + " сумма накоплений составляет " + total2);
 
             }
         }
 
 
 
+
+        }
+
     }
-}
+
