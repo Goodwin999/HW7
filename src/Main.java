@@ -34,5 +34,16 @@ public class Main {
             birthRate = birthRate + 1;
         }
 
+        System.out.println();
+        int contribution1 = 15000;
+        int target = 12_000_000;
+        int percent = 7;
+        for (int j = 0; contribution1 < target; j++) {
+            contribution1 = contribution1 + contribution1 * percent / 100;
+            System.out.println("Месяц " + j + " сумма накоплений составляет " + contribution1);
+
+        }
+
+
     }
 }
