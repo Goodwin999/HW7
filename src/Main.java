@@ -75,13 +75,22 @@ public class Main {
         int friday = 1;
         int day = 31;
         for (friday = 1; friday < day; friday = friday + 7) {
-            System.out.println("Сегодня пятница " + friday + " - число, необходимо подготовить отчет ");
+            System.out.println("Сегодня пятница " + friday + " -e число, необходимо подготовить отчет ");
         }
 
 
+        int period = 79;
+        int thisYear = 2023;
+        int lastYear = thisYear - 200;
+        int nextYear = thisYear + 100;
+        for (int year = 0; year < nextYear; year = year + period) {
+            if (year > lastYear) {
+                System.out.println(year);
 
-
+            }
+        }
     }
 }
+
 
 
