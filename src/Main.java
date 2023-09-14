@@ -68,14 +68,20 @@ public class Main {
             total3 = total3 + total3 * percent2 / 100;
             total3 = total3 + contribution3;
             if (month % 6 == 0) {
-                System.out.println("Месяц " + month +  " сумма накоплений составляет " + total3);
+                System.out.println("Месяц " + month + " сумма накоплений составляет " + total3);
             }
+        }
+
+        int friday = 1;
+        int day = 31;
+        for (friday = 1; friday < day; friday = friday + 7) {
+            System.out.println("Сегодня пятница " + friday + " - число, необходимо подготовить отчет ");
         }
 
 
 
-    }
 
+    }
 }
 
 
